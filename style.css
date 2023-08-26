@@ -1,0 +1,163 @@
+/* Reset some default styles */
+body, h1, h2, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Main content container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* University cards */
+.universities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #b74343;
+    padding: 2rem;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #e10f0f;
+}
+/* Mentor cards */
+.mentors {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    
+}
+.mentors h2, .team h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.mentor-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.mentor-profile button.message-button {
+    display: none;
+}
+.mentor-profile {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-profile img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.mentor-profile h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.mentor-profile p {
+    margin-bottom: 5px;
+    color: #888;
+}
+
+.message-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-button:hover {
+    background-color: #555;
+}
+
+/* Team member profiles */
+.team {
+    padding: 2rem;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.profile {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.profile p {
+    margin-bottom: 5px;
+    color: #888;
+}
+
+.message-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .mentor-card, .team-member {
+        grid-template-columns: 1fr;
+    }
+}
